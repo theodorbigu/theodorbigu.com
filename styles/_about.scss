@@ -1,0 +1,46 @@
+
+
+$test-border: none;
+$about: #807e7e;
+
+.about{
+    background: black;
+    height: 100vh;
+    border: $test-border;
+}
+
+.aboutMe{
+    border: $test-border;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50vw;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    padding: 30px;
+    
+    h2{
+        position: relative;
+        top: 150px;
+        color: $about;
+        text-align: center;
+        border: $test-border;
+        font-size: 3rem;
+        transition: 0.5s;
+        opacity: 0; 
+    }
+    p{
+        position: relative;
+        top: 150px;
+        color: $about;
+        border: $test-border;
+        margin-top: 3rem;
+        font-size: 1.1rem;
+        text-align: center;
+        transition: 0.5s; 
+        opacity: 0;   
+    }
+}

@@ -1,0 +1,51 @@
+
+
+.face{
+    position: relative;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background: #ffdf01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face::before{
+    content: '';
+    position: absolute;
+    bottom: 0.6em;
+    width: 2.5em;
+    height: 1.4em;
+    background: #da9101;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.eyes{
+    position: relative;
+    bottom: 1em;
+    display: flex;
+}
+
+.eyes .eye{
+    position: relative;
+    width: 1.4em;
+    height: 1.4em;
+    display: block;
+    background: #fff;
+    margin: 0.2em 0.3em;
+    border-radius:50%;
+}
+
+.eyes .eye::before{
+    content: '';
+    position:absolute;
+    top: 50%;
+    left: 0.35em;
+    transform: translate(-50%, -50%);
+    width: 0.5em;
+    height: 0.5em;
+    background: #333;
+    border-radius: 50%;
+}

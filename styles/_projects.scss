@@ -1,0 +1,186 @@
+
+$about: #666666;
+
+.projects{
+    color: $about;
+    background: black;
+    margin-bottom: 15rem;
+    h2{
+        position: relative;
+        right: 300px;
+        opacity: 0;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        color: $about;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+
+.description{
+    font-size: 1rem;
+    a{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: white;
+        i{
+            font-size: 1.5rem;
+            transition: color 0.4s ease;
+        }
+    }
+}
+
+#birthdayDescription{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: 100%;
+    height: 100%;
+    background: #da9101;
+}
+
+#codeBirthday:hover i{
+    color: #1779ff;
+}
+#codeCrypto:hover i{
+    color: #13c783;
+}
+#codePortofolio:hover i{
+    color: #630001;
+}
+
+#myProjects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    div{
+        position: relative;
+        //border: white 1px solid;
+        margin: 4rem 5rem;
+    }
+    img{
+        max-width:80%;
+        height:auto;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+    }
+    img:hover{
+        border: 5px solid #630001;
+        transition: all 0.4s ease;
+        background-color: white;
+    }
+}
+
+.image {
+    cursor: pointer;
+    p{
+        text-align: center;   
+        margin-top: 80px;
+       // position: absolute;
+        color: white;
+        font-size: 1.8rem;
+        opacity: 0;
+    }
+}
+
+#portofolio{
+    margin-top: 30px;
+}
+
+.image:hover p{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+#image1{
+    position: relative;
+    background:url('../photos/birthday.png') no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    left: -400px;
+    opacity: 0;
+}
+#image1P{
+    position: relative;
+    left: 700px;
+}
+#image1Layer{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #1779ff;
+}
+
+
+#image1:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
+    //transition: box-shadow 3s ease;
+    border: 10px solid #1779ff;
+    transition: border 0.3s ease-in;
+}
+#image2{
+    position: relative;
+    background:url('../photos/crypto.png') no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    right: -400px;
+    opacity: 0;
+}
+#image2P{
+    position: relative;
+    left: -700px;
+}
+#image2Layer{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #13c783;
+}
+#image2:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    //transition: box-shadow 3s ease;
+    border: 10px solid #13c783;
+    transition: border 0.3s ease-in;
+}
+#image3{
+    position: relative;
+    background:url('../photos/portofolio.png') no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    left: -400px;
+    opacity: 0;
+    div{
+        opacity: 0;
+    }
+}
+#image3P{
+    position: relative;
+    left: 700px;
+}
+#image3Layer{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #630001;
+}
+#image3:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    //transition: box-shadow 3s ease;
+    border: 10px solid #630001;
+    transition: border 0.3s ease-in;
+}
+
+
+
+
