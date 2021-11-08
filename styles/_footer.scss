@@ -1,62 +1,59 @@
+@import "./variables";
 
 $maroon: #630001;
 
-footer{
-    background: #111;
-    color: #666;
-    position: relative;
-  }
-  
-  .footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  
-  .socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem 0 0.5rem 0;
-  }
-  
-  .socials li{
-    margin: 0 10px;
-  }
-  
-  .socials a{
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .socials a i{
-    font-size: 1.8rem;
-    transition: color 0.4s ease;
-  }
-  
-  .socials a:hover i{
-    color: #ff070b;
-  }
-  
-  .footer-bottom{
-    background: #000;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
+footer {
+  background: #111;
+  color: #666;
+  position: relative;
+}
 
-  
-  .footer-bottom a{
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.4s ease;
-  }
-  
-  .footer-bottom a:hover{
-    color: #ff070b;
-  }
-  
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #000;
+}
+
+.socials a i {
+  font-size: 1.8rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: $secondary;
+}
+
+.footer-bottom {
+  background: #000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.footer-bottom a:hover {
+  color: #ff070b;
+}

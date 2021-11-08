@@ -1,6 +1,6 @@
+@import "./variables";
 
-
-h1{
+h1 {
   color: white;
   position: absolute;
   top: 20vw;
@@ -17,7 +17,7 @@ h1 .hi {
 }
 
 h1 .text {
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   font-weight: normal;
   padding-left: 1.2vw;
 }
@@ -26,7 +26,8 @@ h1 .box {
   position: absolute;
   bottom: 0;
   display: inline-block;
-  background: #630001;
+  background: $secondary;
+  opacity: 0.7;
   height: 1vw;
   z-index: -1;
 }

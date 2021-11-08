@@ -1,156 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./photos/logo2.png">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./photos/logo2.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <title>Theodor Bigu</title>
-</head>
-<body id="scrollbar">
+  </head>
+  <body id="scrollbar">
     <nav>
-        <ul class="nav-links">
-            <li>
-                <a id="ahome" class="nav-link" href="#">Home<span class="u1"></span></a>
-                
-            </li>
-            <li>
-                <a  id="aabout" class="nav-link" href="#aboutMe">About<span class="u2"></span></a>
-            </li>
-            <li>
-                <a  id="aprojects" class="nav-link" href="#myProjectsTitle">Projects<span class="u3"></span></a>
-            </li>
-            <li>
-                <a  id="acontact" class="nav-link" href="#contactForm">Contact<span class="u4"></span></a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <ul class="nav-links">
+        <li>
+          <a id="ahome" class="nav-link" href="#"
+            >Home<span class="u1"></span
+          ></a>
+        </li>
+        <li>
+          <a id="aabout" class="nav-link" href="#aboutMe"
+            >About<span class="u2"></span
+          ></a>
+        </li>
+        <li>
+          <a id="aprojects" class="nav-link" href="#myProjectsTitle"
+            >Projects<span class="u3"></span
+          ></a>
+        </li>
+        <li>
+          <a id="acontact" class="nav-link" href="#contactForm"
+            >Contact<span class="u4"></span
+          ></a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
 
-    
-
     <section>
-        <div class="stars">
-        <div id='stars1'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-        </div>
+      <div class="stars">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
     </section>
     <div class="about">
-        <h1>
-            <span class="box"></span>
-            <span class='hi'>Hi, I'm</span>
-            <span class="text"></span>
-            <span class="cursor">_</span>
-        </h1>
-        <div id="aboutMe" class="aboutMe">
-            <h2 id="aboutH2">About Me</h2>
-            <p id="aboutP">Hi, I'm Theodor, a self-taught Frontend developer studying at Faculty of Mathematics and Computer Science, University of Bucharest.<br> My main focus is web development but I also code in Java, C++.</p>
-        </div>
+      <h1>
+        <span class="box"></span>
+        <span class="hi">Hi, I'm</span>
+        <span class="text"></span>
+        <span class="cursor">_</span>
+      </h1>
+      <div id="aboutMe" class="aboutMe">
+        <h2 id="aboutH2">About Me</h2>
+        <p id="aboutP">
+          Hi, I'm Theodor, a self-taught Frontend developer studying at Faculty
+          of Mathematics and Computer Science, University of Bucharest.<br />
+          My main focus is web development but I also code in Java, C++.
+        </p>
+      </div>
     </div>
-
 
     <div class="projects">
-        <h2 id="myProjectsTitle">My Projects</h2>
-        <div id="myProjects">
-            <div id="image1" class="image" data-tilt data-tilt-scale="1.1" onclick="window.open('https://birthdayreminder-e8377.web.app/', '_blank');">
-                    <span id="image1Layer"></span>
-                    <p id="birthdayReminder">Birthday Reminder</p>
-            </div>
-            <div>
-                
-                <p id="image1P" class="description">
-                    <span style="color:rgba(250, 235, 215, 0.808)">Birthday Reminder</span> is one of my first projects. I tend to forget important birthdays easily so I created a web app similar to a calendar. You can add the birthdays of all the important people in your life and the website will store them in the <span style="color:rgba(250, 235, 215, 0.808)">local storage</span>.
-                This project only consists of HTML, SASS and vanilla JavaScript. It helped me have a better understanding of the<span style="color:rgba(250, 235, 215, 0.808)"> HTMLCollection</span> and all its methods.
-                <br><br><span style="color:rgba(250, 235, 215, 0.808)">
-                Skills used:<br>-HTML<br>-CSS/SASS<br>-JavaScript<br>-Web Storage API<br><br>
-                Code:
-                </span>
-                <a id="codeBirthday" href="https://github.com/theodorbigu/Birthday-Reminder" target="_blank"><i class="fab fa-github"></i></a>
-                </p>
-            </div>
-            <div>
-                <p id="image2P" class="description">
-                    <span style="color:rgba(250, 235, 215, 0.808)">Crypto Tracker</span> is the first project that I created using a React framework,<span style="color:rgba(250, 235, 215, 0.808)">Next.js</span>. Bitcoin and other cryptocurrencies have become very popular lately and I thought it is a good ideea to create a website where you can see important information about them. You can see how much it is worth 1 of every coin in USD, how much it has gone up or down in the last 24h, and if you click on it you will be sent to a dynamic page where you will see only that coin's information. I have learned a lot building this site including basics of React and Next.js, fetching data from an API and how to use a React library like <span style="color:rgba(250, 235, 215, 0.808)">Framer Motion</span>.<br>
-                    <span style="color:rgba(250, 235, 215, 0.808)"><br>
-                Skills used:<br>-React<br>-Next.js<br>-CoinGecko API<br>-Framer Motion<br><br>
-                Code:
-                </span>
-                <a id="codeCrypto" href="https://github.com/theodorbigu/nextjs-crypto-api" target="_blank"><i class="fab fa-github"></i></a>
-                </p>
-            </div>
-                
-                <div id="image2" class="image" data-tilt data-tilt-scale="1.1" onclick="window.open('https://crypto-tracker-webapp.netlify.app/', '_blank');">
-                    <span id="image2Layer"></span>
-                    <p id="cryptoTracker">Crypto Tracker</p>
-                </div>
-                <div id="image3" class="image" data-tilt data-tilt-scale="1.1" onclick="window.open('https://www.theodor-bigu.com/', '_blank');">
-                    <span id="image3Layer"></span>
-                    <p id="portofolio">Portofolio</p>
-                    <div>empty space</div>
-                </div>
-            <div>
-                <p id="image3P" class="description">
-                This is the website you are seeing right now. I learned a lot about<span style="color:rgba(250, 235, 215, 0.808)"> GSAP animations</span> and their<span style="color:rgba(250, 235, 215, 0.808)"> ScrollTrigger</span> plugin while building it.<br><br>
-                <span style="color:rgba(250, 235, 215, 0.808)">
-                Skills used:<br>-HTML<br>SASS<br>-GSAP animations<br>-GSAP ScrollTrigger<br>-Tilt.js<br><br>
-                Code: 
-                </span>
-                <a id="codePortofolio" href="https://github.com/theodorbigu/Portofolio" target="_blank"><i class="fab fa-github"></i></a>
-                </p>
-            </div>
+      <h2 id="myProjectsTitle">My Projects</h2>
+      <div id="myProjects">
+        <div
+          id="image1"
+          class="image"
+          data-tilt
+          data-tilt-scale="1.1"
+          onclick="window.open('https://birthdayreminder-e8377.web.app/', '_blank');"
+        >
+          <span id="image1Layer"></span>
+          <p id="birthdayReminder">Birthday Reminder</p>
+        </div>
+        <div>
+          <p id="image1P" class="description">
+            <span style="color: rgba(255, 255, 255, 0.808)"
+              >Birthday Reminder</span
+            >
+            is one of my first projects. I tend to forget important birthdays
+            easily so I created a web app similar to a calendar. You can add the
+            birthdays of all the important people in your life and the website
+            will store them in the
+            <span style="color: rgba(250, 235, 215, 0.808)">local storage</span
+            >. This project only consists of HTML, SASS and vanilla JavaScript.
+            It helped me have a better understanding of the<span
+              style="color: rgba(250, 235, 215, 0.808)"
+            >
+              HTMLCollection</span
+            >
+            and all its methods. <br /><br /><span
+              style="color: rgba(250, 235, 215, 0.808)"
+            >
+              Skills used:<br />-HTML<br />-CSS/SASS<br />-JavaScript<br />-Web
+              Storage API<br /><br />
+              Code:
+            </span>
+            <a
+              id="codeBirthday"
+              href="https://github.com/theodorbigu/Birthday-Reminder"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </p>
+        </div>
+        <div>
+          <p id="image2P" class="description">
+            <span style="color: rgba(250, 235, 215, 0.808)"
+              >Crypto Tracker</span
+            >
+            is the first project that I created using a React framework,<span
+              style="color: rgba(250, 235, 215, 0.808)"
+              >Next.js</span
+            >. Bitcoin and other cryptocurrencies have become very popular
+            lately and I thought it is a good ideea to create a website where
+            you can see important information about them. You can see how much
+            it is worth 1 of every coin in USD, how much it has gone up or down
+            in the last 24h, and if you click on it you will be sent to a
+            dynamic page where you will see only that coin's information. I have
+            learned a lot building this site including basics of React and
+            Next.js, fetching data from an API and how to use a React library
+            like
+            <span style="color: rgba(250, 235, 215, 0.808)">Framer Motion</span
+            >.<br />
+            <span style="color: rgba(250, 235, 215, 0.808)"
+              ><br />
+              Skills used:<br />-React<br />-Next.js<br />-CoinGecko API<br />-Framer
+              Motion<br /><br />
+              Code:
+            </span>
+            <a
+              id="codeCrypto"
+              href="https://github.com/theodorbigu/nextjs-crypto-api"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </p>
         </div>
 
+        <div
+          id="image2"
+          class="image"
+          data-tilt
+          data-tilt-scale="1.1"
+          onclick="window.open('https://crypto-tracker-webapp.netlify.app/', '_blank');"
+        >
+          <span id="image2Layer"></span>
+          <p id="cryptoTracker">Crypto Tracker</p>
+        </div>
+        <div
+          id="image3"
+          class="image"
+          data-tilt
+          data-tilt-scale="1.1"
+          onclick="window.open('https://www.theodor-bigu.com/', '_blank');"
+        >
+          <span id="image3Layer"></span>
+          <p id="portofolio">Portofolio</p>
+          <div>empty space</div>
+        </div>
+        <div>
+          <p id="image3P" class="description">
+            This is the website you are seeing right now. I learned a lot
+            about<span style="color: rgba(250, 235, 215, 0.808)">
+              GSAP animations</span
+            >
+            and their<span style="color: rgba(250, 235, 215, 0.808)">
+              ScrollTrigger</span
+            >
+            plugin while building it.<br /><br />
+            <span style="color: rgba(250, 235, 215, 0.808)">
+              Skills used:<br />-HTML<br />SASS<br />-GSAP animations<br />-GSAP
+              ScrollTrigger<br />-Tilt.js<br /><br />
+              Code:
+            </span>
+            <a
+              id="codePortofolio"
+              href="https://github.com/theodorbigu/Portofolio"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </p>
+        </div>
+      </div>
     </div>
-
 
     <div id="contactForm" class="contact">
-        <section>
-            <div class="starsc">
-            <div id='stars1c'></div>
-            <div id='stars2c'></div>
-            </div>
-        </section>
-
-
-        <div  class="contactForm">
-            <h2>Contact<span></span></h2>
-            <p>Have any questions or want to work together?</p>
-            <form action="POST" data-netlify="true">
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="email">Email address</label><br>
-                    <input type="text" id="email" name="email" required><br>
-                    <label for="company">Company</label><br>
-                    <input type="text" id="company" name="company"><br>
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="4" cols="24" required></textarea><br>
-                    <div class="submit">
-                        <input id="submit" type="submit">
-                    </div>
-
-            </form>
+      <section>
+        <div class="starsc">
+          <div id="stars1c"></div>
+          <div id="stars2c"></div>
         </div>
+      </section>
+
+      <div class="contactForm">
+        <h2>Contact<span></span></h2>
+        <p>Have any questions or want to work together?</p>
+        <form autocomplete="off" action="POST" data-netlify="true">
+          <label for="name">Name</label><br />
+          <input
+            autocomplete="off"
+            type="text"
+            id="name"
+            name="name"
+            required
+          /><br />
+          <label for="email">Email address</label><br />
+          <input type="text" id="email" name="email" required /><br />
+          <label for="company">Company</label><br />
+          <input type="text" id="company" name="company" /><br />
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="24"
+            required
+          ></textarea
+          ><br />
+          <div class="submit">
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+      </div>
     </div>
 
-
     <footer>
-        <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/profile.php?id=100010228410190" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://github.com/theodorbigu" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/theodor-bigu-81864a213/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p> &copy; 2021 Theodor Bigu</p>
-        </div>
+      <div class="footer-content">
+        <ul class="socials">
+          <!-- <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100010228410190"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li> -->
+          <li>
+            <a href="https://github.com/theodorbigu" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/theodor-bigu-81864a213/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2021 Theodor Bigu</p>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
@@ -160,5 +270,5 @@
 
     <script src="app.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
-</body>
+  </body>
 </html>
