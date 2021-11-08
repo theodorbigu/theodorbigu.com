@@ -1,5 +1,8 @@
 @import "./variables";
 
+$crypto: #13c783;
+$popcorn: #edc66d;
+
 .projects {
   color: $dark-text-color;
   background: black;
@@ -17,47 +20,41 @@
 }
 
 .description {
+  position: absolute;
+  top: 10vh;
   font-size: 1rem;
   a {
     margin-left: 0.5rem;
     margin-top: 1rem;
     text-decoration: none;
     color: white;
-    i {
-      font-size: 1.5rem;
-      transition: color 0.4s ease;
-    }
+    font-size: 1.5rem;
+    transition: color 0.1s ease;
   }
 }
 
-#birthdayDescription {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 700px;
-  width: 100%;
-  height: 100%;
-  background: #da9101;
+#codeBirthday:hover {
+  color: $secondary;
 }
-
-#codeBirthday:hover i {
-  color: #1779ff;
+#codeCrypto:hover {
+  color: $crypto;
 }
-#codeCrypto:hover i {
-  color: #13c783;
-}
-#codePortofolio:hover i {
-  color: #630001;
+#codePortofolio:hover {
+  color: $popcorn;
 }
 
 #myProjects {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(100px, auto);
+  margin-right: 10vw;
+  margin-left: 10vw;
   div {
     position: relative;
     //border: white 1px solid;
-    margin: 4rem 5rem;
+    margin: 3rem 2rem;
+    height: 50vh;
   }
 }
 
@@ -65,7 +62,7 @@
   cursor: pointer;
   p {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 8vh;
     // position: absolute;
     color: white;
     font-size: 1.8rem;
@@ -83,16 +80,15 @@
 }
 
 #image1 {
-  position: relative;
+  position: absolute;
   background: url("../photos/birthday.png") no-repeat center;
   background-size: 100% 100%;
-  position: relative;
   left: -400px;
   opacity: 0;
 }
 #image1P {
   position: relative;
-  left: 700px;
+  left: 100vw;
 }
 #image1Layer {
   content: "";
@@ -108,7 +104,7 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
   //transition: box-shadow 3s ease;
   border: 10px solid #1779ff;
-  transition: border 0.3s ease-in;
+  transition: border 0.3s cubic-bezier(0.42, 0, 0, 1);
 }
 #image2 {
   position: relative;
@@ -120,7 +116,7 @@
 }
 #image2P {
   position: relative;
-  left: -700px;
+  left: -100vw;
 }
 #image2Layer {
   content: "";
@@ -139,7 +135,7 @@
 }
 #image3 {
   position: relative;
-  background: url("../photos/portofolio.png") no-repeat center;
+  background: url("../photos/popcorn.jpg") no-repeat center;
   background-size: 100% 100%;
   position: relative;
   left: -400px;
@@ -150,7 +146,7 @@
 }
 #image3P {
   position: relative;
-  left: 700px;
+  left: 100vw;
 }
 #image3Layer {
   content: "";
@@ -159,11 +155,11 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  background: #630001;
+  background: $popcorn;
 }
 #image3:hover {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
   //transition: box-shadow 3s ease;
-  border: 10px solid #630001;
+  border: 10px solid $popcorn;
   transition: border 0.4s cubic-bezier(0.42, 0, 0, 1);
 }

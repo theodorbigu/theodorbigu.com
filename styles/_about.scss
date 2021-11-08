@@ -1,8 +1,7 @@
 @import "./variables";
 
+$test-border: 1px solid white;
 $test-border: none;
-
-$about: #807e7e;
 
 .about {
   background: black;
@@ -29,6 +28,7 @@ $about: #807e7e;
     color: $text-color;
     text-align: center;
     border: $test-border;
+    margin-bottom: 3rem;
     font-size: 3rem;
     transition: 0.5s;
     opacity: 0;
@@ -38,10 +38,40 @@ $about: #807e7e;
     top: 150px;
     color: $text-color;
     border: $test-border;
-    margin-top: 3rem;
+    margin-bottom: 4rem;
     font-size: 1.1rem;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
+  }
+}
+
+.skills {
+  border: $test-border;
+  p {
+    top: 0;
+    color: $text-color;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: $secondary;
+  }
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $text-color;
+  div {
+    border: $test-border;
+  }
+  li {
+    list-style-type: none;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    background: rgb(20, 20, 20);
+    margin: 1rem 0;
   }
 }
