@@ -139,7 +139,7 @@ let birthdayTL = gsap.timeline({
 birthdayTL.to("#image1", {
   opacity: 1,
   left: 0,
-  duration: 0.65,
+  duration: 0.5,
 });
 
 let image1Layer = gsap.timeline({
@@ -149,7 +149,7 @@ let image1Layer = gsap.timeline({
     //markers: true
   },
 });
-image1Layer.to("#image1Layer", { left: 0, duration: 0.6, delay: 0.2 });
+image1Layer.to("#image1Layer", { left: 0, duration: 0.3 });
 image1Layer.to("#image1Layer", {
   scaleX: 0,
   transformOrigin: "100% bottom",
@@ -176,7 +176,7 @@ let cryptoTL = gsap.timeline({
   },
 });
 
-cryptoTL.to("#image2", { opacity: 1, left: 0, duration: 0.6 });
+cryptoTL.to("#image2", { opacity: 1, left: 0, duration: 0.5 });
 
 let image2Layer = gsap.timeline({
   scrollTrigger: {
@@ -185,7 +185,7 @@ let image2Layer = gsap.timeline({
     //markers: true
   },
 });
-image2Layer.to("#image2Layer", { left: 0, duration: 0.6 });
+image2Layer.to("#image2Layer", { left: 0, duration: 0.3 });
 image2Layer.to("#image2Layer", { scaleX: 0, transformOrigin: "0% bottom" });
 
 let image2P = gsap.timeline({
@@ -207,7 +207,7 @@ let portofolioTL = gsap.timeline({
   },
 });
 
-portofolioTL.to("#image3", { opacity: 1, left: 0, duration: 0.6 });
+portofolioTL.to("#image3", { opacity: 1, left: 0, duration: 0.3 });
 
 let image3Layer = gsap.timeline({
   scrollTrigger: {
@@ -216,7 +216,7 @@ let image3Layer = gsap.timeline({
     //markers: true
   },
 });
-image3Layer.to("#image3Layer", { left: 0, duration: 0.6, delay: 0.2 });
+image3Layer.to("#image3Layer", { left: 0, duration: 0.3 });
 image3Layer.to("#image3Layer", {
   scaleX: 0,
   transformOrigin: "100% bottom",
