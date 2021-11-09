@@ -1,11 +1,10 @@
 @import "./variables";
 
-$test-border: 1px solid white;
 $test-border: none;
 
 .about {
   background: black;
-  height: 130vh;
+  height: 160vh;
   border: $test-border;
 }
 
@@ -52,7 +51,7 @@ $test-border: none;
     top: 0;
     color: $text-color;
     opacity: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   h3 {
     color: $secondary;
@@ -80,7 +79,6 @@ $test-border: none;
     li {
       list-style-type: none;
       border: 1px solid gray;
-  
 
       border-radius: 5px;
       background: rgb(20, 20, 20);

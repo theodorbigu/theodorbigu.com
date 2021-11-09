@@ -3,10 +3,10 @@
 $crypto: #13c783;
 $popcorn: #edc66d;
 
-$test-border: 1px solid white;
-$test-border: none;
+//$test-border: none;
 
 .projects {
+  border: $test-border;
   color: $dark-text-color;
   background: black;
   margin-bottom: 15rem;
@@ -47,6 +47,7 @@ $test-border: none;
 }
 
 #myProjects {
+  border: $test-border;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 8vw 1fr;
