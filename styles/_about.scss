@@ -64,7 +64,7 @@ $test-border: none;
   justify-content: space-around;
   color: $text-color;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1vw;
+  grid-gap: 3vw;
   h3 {
     text-align: center;
     margin-bottom: 1rem;
@@ -75,7 +75,7 @@ $test-border: none;
   ul {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
     align-items: center;
     li {
