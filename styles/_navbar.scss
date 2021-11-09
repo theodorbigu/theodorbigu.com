@@ -10,7 +10,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  // box-shadow: 0px 10px 22px 7px #000000;
+  transition: all 0.4s ease;
 }
 
 .nav-links {
@@ -115,4 +117,9 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-hidden {
+  transform: translateY(-10vh);
+  transition: all 0.4s ease;
 }

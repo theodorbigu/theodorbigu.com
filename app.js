@@ -234,3 +234,17 @@ let image3P = gsap.timeline({
 image3P.to("#image3P", { left: 0, duration: 0.6 });
 
 ///
+
+//hide navbar on scroll down
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    navbar.classList.add("nav-hidden");
+  } else {
+    navbar.classList.remove("nav-hidden");
+  }
+
+  lastScrollY = window.scrollY;
+});
