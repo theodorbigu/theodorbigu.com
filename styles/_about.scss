@@ -75,13 +75,13 @@ $test-border: none;
   ul {
     text-align: center;
     display: grid;
-    //grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
-    align-items: center;
+    justify-content: center;
     li {
       list-style-type: none;
       border: 1px solid gray;
-      //border: 1px solid $secondary;
+  
+
       border-radius: 5px;
       background: rgb(20, 20, 20);
       width: 120px;
