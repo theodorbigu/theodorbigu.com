@@ -67,13 +67,13 @@ words.forEach((w) => {
 ///Nav Hover animation
 
 //HOME
-let navTL1 = gsap.timeline({ paused: true });
-navTL1.from(".u1", { duration: 0.25, width: "0vw", ease: "power0" });
+// let navTL1 = gsap.timeline({ paused: true });
+// navTL1.from(".u1", { duration: 0.25, width: "0vw", ease: "power0" });
 
-let home = document.getElementById("ahome");
+// let home = document.getElementById("ahome");
 
-home.addEventListener("mouseenter", () => navTL1.play());
-home.addEventListener("mouseleave", () => navTL1.reverse());
+// home.addEventListener("mouseenter", () => navTL1.play());
+// home.addEventListener("mouseleave", () => navTL1.reverse());
 
 //ABOUT
 let navTL2 = gsap.timeline({ paused: true });

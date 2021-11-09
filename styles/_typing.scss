@@ -31,3 +31,28 @@ h1 .box {
   height: 1vw;
   z-index: -1;
 }
+
+.hero-mobile {
+  z-index: 30;
+  position: absolute;
+  top: 10vh;
+  color: white;
+  //background: white;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    h1 {
+      display: none;
+    }
+  }
+  .hero-mobile {
+    display: block;
+    z-index: 30;
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    color: white;
+  }
+}

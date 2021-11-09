@@ -1,4 +1,5 @@
 @import "./variables";
+$nav-background: rgba(0, 0, 0, 0.7);
 
 nav {
   z-index: 999;
@@ -7,10 +8,10 @@ nav {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   min-height: 8vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: $nav-background;
   // box-shadow: 0px 10px 22px 7px #000000;
   transition: all 0.4s ease;
 }
@@ -18,7 +19,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 30%;
   z-index: 2;
 
   li {
@@ -53,7 +54,7 @@ nav {
     width: 25px;
     height: 3px;
     border-radius: 3px;
-    background: rgb(218, 214, 214);
+    background: $text-color;
     margin: 5px;
     transition: all 0.5s ease;
   }
@@ -66,16 +67,15 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+  nav {
+    background: $nav-background;
   }
-
   .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background: white;
+    background: $nav-background;
     flex-direction: column;
     align-items: center;
     width: 45%;
@@ -90,7 +90,11 @@ nav {
   .burger {
     display: block;
     position: relative;
-    left: 9rem;
+    left: 12rem;
+  }
+  #resume {
+    position: relative;
+    right: 12rem;
   }
 }
 
@@ -122,4 +126,25 @@ nav {
 .nav-hidden {
   transform: translateY(-10vh);
   transition: all 0.4s ease;
+}
+
+#resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 3px solid $secondary;
+  color: $secondary;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  &:hover {
+    transition: all 0.4s ease;
+    color: white;
+    background: $secondary;
+  }
 }

@@ -102,3 +102,36 @@ $test-border: none;
     }
   }
 }
+.hero-mobile {
+  //display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    h1 {
+      top: 30vw;
+      left: 10vw;
+      font-size: 7vw;
+    }
+  }
+  .text {
+    //color: red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    h1 {
+      display: none;
+    }
+  }
+  // .hero-mobile {
+  //   display: block;
+  //   position: absolute;
+  //   top: 20vw;
+  //   left: 20vw;
+  //   z-index: 3000;
+  //   background: white;
+  //   color: white;
+  // }
+}
