@@ -5,7 +5,13 @@ $test-border: none;
 .about {
   height: 160vh;
   border: $test-border;
-  background: linear-gradient(to bottom, black, transparent);
+  //background: linear-gradient(to bottom, black, transparent);
+  // background: radial-gradient(
+  //   ellipse at bottom,
+  //   rgb(15, 15, 15) 0%,
+  //   #000000 70%
+  // );
+  background: $background;
 }
 
 .aboutMe {

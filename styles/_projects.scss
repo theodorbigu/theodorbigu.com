@@ -8,7 +8,7 @@ $test-border: none;
 .projects {
   border: $test-border;
   color: $dark-text-color;
-  background: linear-gradient(to top, black, transparent);
+  background: $background;
   padding-bottom: 15rem;
   overflow-x: hidden;
   h2 {
