@@ -55,6 +55,7 @@ $test-border: none;
   border: $test-border;
   p {
     top: 0;
+    font-size: 1.8rem;
     color: $text-color;
     opacity: 1;
     margin-bottom: 3rem;
@@ -62,6 +63,26 @@ $test-border: none;
   h3 {
     color: $secondary;
   }
+}
+
+#tools1 {
+  position: relative;
+  opacity: 0;
+  top: 100px;
+}
+#tools2 {
+  position: relative;
+  opacity: 0;
+  top: 70px;
+}
+#tools3 {
+  position: relative;
+  opacity: 0;
+  top: 50px;
+}
+#skillsP {
+  opacity: 0;
+  top: 100px;
 }
 
 .tools {

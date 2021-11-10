@@ -108,12 +108,63 @@ contact.addEventListener("mouseleave", () => navTL4.reverse());
 let aboutTL = gsap.timeline({
   scrollTrigger: {
     trigger: ".aboutMe",
-    start: "40% 70%",
+    start: "10% 70%",
+  },
+});
+
+let tools1TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".frontend",
+    start: "10% 70%",
+    //markers: true,
+  },
+});
+let tools2TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".frontend",
+    start: "10% 70%",
+    //markers: true,
+  },
+});
+let tools3TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".frontend",
+    start: "10% 70%",
+    // markers: true,
+  },
+});
+let skillsPTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".skills",
+    start: "20% 70%",
+    //markers: true,
   },
 });
 
 aboutTL.to("#aboutH2", { opacity: 1, top: 0, duration: 0.5, ease: "sine.out" });
 aboutTL.to("#aboutP", { opacity: 1, top: 0, duration: 0.5, ease: "sine.out" });
+
+tools1TL.to("#tools1", { opacity: 1, top: 0, duration: 0.3, ease: "sine.out" });
+tools2TL.to("#tools2", {
+  opacity: 1,
+  top: 0,
+  duration: 0.3,
+  delay: 0.4,
+  ease: "sine.out",
+});
+tools3TL.to("#tools3", {
+  opacity: 1,
+  top: 0,
+  duration: 0.3,
+  delay: 0.8,
+  ease: "sine.out",
+});
+skillsPTL.to("#skillsP", {
+  opacity: 1,
+  top: 0,
+  duration: 0.5,
+  ease: "sine.out",
+});
 ////
 
 ///My Projects
@@ -127,6 +178,8 @@ let myProjects = gsap.timeline({
 });
 myProjects.to("#myProjectsTitle", { opacity: 1, right: 0, duration: 0.65 });
 ///
+
+
 
 //image1 (birthday)
 let birthdayTL = gsap.timeline({
@@ -149,7 +202,7 @@ let image1Layer = gsap.timeline({
     //markers: true
   },
 });
-image1Layer.to("#image1Layer", { left: 0, duration: 0.3 });
+image1Layer.to("#image1Layer", { left: 0, duration: 0.6 });
 image1Layer.to("#image1Layer", {
   scaleX: 0,
   transformOrigin: "100% bottom",
@@ -164,7 +217,7 @@ let image1P = gsap.timeline({
   },
 });
 
-image1P.to("#image1P", { left: 0, display: "block", duration: 0.6 });
+image1P.to("#image1P", { opacity: 1, duration: 0.6, ease: "power2.out" });
 
 ////
 
@@ -190,7 +243,11 @@ let image2Layer = gsap.timeline({
   },
 });
 image2Layer.to("#image2Layer", { left: 0, duration: 0.3 });
-image2Layer.to("#image2Layer", { scaleX: 0, transformOrigin: "0% bottom" });
+image2Layer.to("#image2Layer", {
+  scaleX: 0,
+  transformOrigin: "0% bottom",
+  duration: 0.65,
+});
 
 let image2P = gsap.timeline({
   scrollTrigger: {
@@ -200,7 +257,7 @@ let image2P = gsap.timeline({
   },
 });
 
-image2P.to("#image2P", { left: 0, duration: 0.6 });
+image2P.to("#image2P", { opacity: 1, duration: 0.6, ease: "power2.out" });
 ///
 
 ///image3 (portofolio)
@@ -235,7 +292,7 @@ let image3P = gsap.timeline({
   },
 });
 
-image3P.to("#image3P", { left: 0, display: "block", duration: 0.6 });
+image3P.to("#image3P", { opacity: 1, duration: 0.6, ease: "power2.out" });
 
 ///
 

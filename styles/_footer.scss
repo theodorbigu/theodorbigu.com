@@ -1,56 +1,51 @@
 @import "./variables";
 
-
 footer {
-  background: #111;
   color: #666;
   position: relative;
-}
-
-.footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
 }
 
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0 0.5rem 0;
-}
+// .footer-content {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   text-align: center;
+// }
 
-.socials li {
-  margin: 0 10px;
-}
+// .socials {
+//   list-style: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0.5rem 0 0.5rem 0;
+// }
 
-.socials a {
-  text-decoration: none;
-  color: #000;
-}
+// .socials li {
+//   margin: 0 10px;
+// }
 
-.socials a i {
-  font-size: 1.8rem;
-  transition: color 0.4s ease;
-}
+// .socials a {
+//   text-decoration: none;
+//   color: #000;
+// }
 
-.socials a:hover i {
-  color: $secondary;
-}
+// .socials a i {
+//   font-size: 1.8rem;
+//   transition: color 0.4s ease;
+// }
+
+// .socials a:hover i {
+//   color: $secondary;
+// }
 
 .footer-bottom {
-  background: #000;
+  background: transparent;
   padding: 10px 0;
   text-align: center;
+  position: absolute;
+  bottom: 0;
 }
-
-.footer-bottom a {
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.4s ease;
-}
-
-

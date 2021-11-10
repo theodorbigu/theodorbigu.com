@@ -108,9 +108,7 @@ $test-border: none;
   grid-area: image1;
 }
 #image1P {
-  position: relative;
-  display: none;
-  left: 100vw;
+  opacity: 0;
 }
 #image1Layer {
   content: "";
@@ -138,8 +136,7 @@ $test-border: none;
   grid-area: image2;
 }
 #image2P {
-  position: relative;
-  left: -100vw;
+  opacity: 0;
 }
 #image2Layer {
   content: "";
@@ -166,9 +163,7 @@ $test-border: none;
   grid-area: image3;
 }
 #image3P {
-  position: relative;
-  left: 100vw;
-  display: none;
+  opacity: 0;
 }
 #image3Layer {
   content: "";
