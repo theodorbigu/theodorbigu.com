@@ -64,9 +64,6 @@ nav {
   .nav-links {
     width: 55%;
   }
-  .burger {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +96,10 @@ nav {
   #resume {
     // position: relative;
     // right: 12rem;
+  }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 
