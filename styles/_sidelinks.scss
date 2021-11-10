@@ -1,0 +1,55 @@
+@import "./variables";
+
+#left-links {
+  position: fixed;
+  left: 50px;
+  bottom: 200px;
+  z-index: 2;
+
+  ul {
+    list-style-type: none;
+    li {
+      a {
+        width: 40px;
+        height: 40px;
+        //border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: $text-color;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $secondary;
+          transform: translateY(-6px);
+          transition: all 0.2s ease;
+        }
+      }
+    }
+  }
+}
+
+.vertical-line-down {
+  position: fixed;
+  left: 71px;
+  bottom: 0;
+  z-index: 2;
+  color: $text-color;
+  background-color: $text-color;
+  height: 180px;
+  width: 2px;
+  content: "";
+}
+.vertical-line-up {
+  position: fixed;
+  left: 67px;
+  top: 0;
+  z-index: 2;
+  color: $text-color;
+  background-color: $text-color;
+  height: 380px;
+  width: 2px;
+  content: "";
+  z-index: 10;
+}

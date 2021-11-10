@@ -41,10 +41,10 @@ $test-border: none;
   color: $secondary;
 }
 #codeCrypto:hover {
-  color: $crypto;
+  color: $secondary;
 }
 #codePortofolio:hover {
-  color: $popcorn;
+  color: $secondary;
 }
 
 #myProjects {
@@ -119,13 +119,13 @@ $test-border: none;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: #1779ff;
+  background: $secondary;
 }
 
 #image1:hover {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
   //transition: box-shadow 3s ease;
-  border: 10px solid #1779ff;
+  border: 10px solid $secondary;
   transition: border 0.8s cubic-bezier(0.42, 0, 0, 1);
 }
 #image2 {
@@ -148,12 +148,12 @@ $test-border: none;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: #13c783;
+  background: $secondary;
 }
 #image2:hover {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
   //transition: box-shadow 3s ease;
-  border: 10px solid #13c783;
+  border: 10px solid $secondary;
   transition: border 0.4s cubic-bezier(0.42, 0, 0, 1);
 }
 #image3 {
@@ -177,11 +177,11 @@ $test-border: none;
   left: 0px;
   width: 100%;
   height: 100%;
-  background: $popcorn;
+  background: $secondary;
 }
 #image3:hover {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
   //transition: box-shadow 3s ease;
-  border: 10px solid $popcorn;
+  border: 10px solid $secondary;
   transition: border 0.4s cubic-bezier(0.42, 0, 0, 1);
 }
