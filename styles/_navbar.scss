@@ -6,7 +6,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,15 +64,19 @@ nav {
   .nav-links {
     width: 55%;
   }
+  .burger {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     background: $nav-background;
+    justify-content: space-around;
   }
   .nav-links {
     position: absolute;
-    right: 0px;
+    right: -5vw;
     height: 92vh;
     top: 8vh;
     background: $nav-background;
@@ -89,12 +93,12 @@ nav {
 
   .burger {
     display: block;
-    position: relative;
-    left: 12rem;
+    // position: relative;
+    // left: 12rem;
   }
   #resume {
-    position: relative;
-    right: 12rem;
+    // position: relative;
+    // right: 12rem;
   }
 }
 

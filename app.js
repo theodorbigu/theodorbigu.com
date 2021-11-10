@@ -164,7 +164,7 @@ let image1P = gsap.timeline({
   },
 });
 
-image1P.to("#image1P", { left: 0, duration: 0.6 });
+image1P.to("#image1P", { left: 0, display: "block", duration: 0.6 });
 
 ////
 
@@ -176,7 +176,11 @@ let cryptoTL = gsap.timeline({
   },
 });
 
-cryptoTL.to("#image2", { opacity: 1, left: 0, duration: 0.5 });
+cryptoTL.to("#image2", {
+  opacity: 1,
+  left: 0,
+  duration: 0.5,
+});
 
 let image2Layer = gsap.timeline({
   scrollTrigger: {
@@ -231,7 +235,7 @@ let image3P = gsap.timeline({
   },
 });
 
-image3P.to("#image3P", { left: 0, duration: 0.6 });
+image3P.to("#image3P", { left: 0, display: "block", duration: 0.6 });
 
 ///
 

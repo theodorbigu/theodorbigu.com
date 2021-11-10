@@ -3,9 +3,9 @@
 $test-border: none;
 
 .about {
-  background: black;
   height: 160vh;
   border: $test-border;
+  background: linear-gradient(to bottom, black, transparent);
 }
 
 .aboutMe {
@@ -102,8 +102,44 @@ $test-border: none;
     }
   }
 }
+
 .hero-mobile {
-  //display: none;
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  z-index: 3000;
+  color: white;
+  p {
+    margin-bottom: 3vw;
+  }
+  #row-1 {
+    p {
+      color: $secondary;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  #row-2 {
+    p {
+      color: white;
+      font-size: 60px;
+      font-weight: 400;
+      margin-bottom: 1vw;
+    }
+  }
+  #row-3 {
+    p {
+      color: $text-color;
+      font-size: 8vw;
+      font-weight: 400;
+    }
+  }
+  #row-4 {
+    p {
+      color: $text-color;
+      font-size: 5vw;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -114,9 +150,6 @@ $test-border: none;
       font-size: 7vw;
     }
   }
-  .text {
-    //color: red;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -125,13 +158,7 @@ $test-border: none;
       display: none;
     }
   }
-  // .hero-mobile {
-  //   display: block;
-  //   position: absolute;
-  //   top: 20vw;
-  //   left: 20vw;
-  //   z-index: 3000;
-  //   background: white;
-  //   color: white;
-  // }
+  .hero-mobile {
+    display: block;
+  }
 }

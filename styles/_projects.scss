@@ -8,8 +8,9 @@ $test-border: none;
 .projects {
   border: $test-border;
   color: $dark-text-color;
-  background: black;
-  margin-bottom: 15rem;
+  background: linear-gradient(to top, black, transparent);
+  padding-bottom: 15rem;
+  overflow-x: hidden;
   h2 {
     position: relative;
     right: 300px;
@@ -108,6 +109,7 @@ $test-border: none;
 }
 #image1P {
   position: relative;
+  display: none;
   left: 100vw;
 }
 #image1Layer {
@@ -166,6 +168,7 @@ $test-border: none;
 #image3P {
   position: relative;
   left: 100vw;
+  display: none;
 }
 #image3Layer {
   content: "";

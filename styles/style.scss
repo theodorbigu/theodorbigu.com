@@ -10,12 +10,12 @@
 @import "./variables";
 
 body {
-  background: black;
-  overflow-x: hidden;
+  background: $background;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
