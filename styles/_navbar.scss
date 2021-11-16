@@ -72,14 +72,16 @@ nav {
     justify-content: space-around;
   }
   .nav-links {
+    background: rgba(0, 0, 0, 1);
+    z-index: 4;
     position: absolute;
-    right: -5vw;
+    // right: -100px;
     height: 92vh;
     top: 8vh;
     background: $nav-background;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 100vw;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
 

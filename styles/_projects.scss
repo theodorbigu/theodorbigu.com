@@ -180,3 +180,9 @@ $test-border: none;
   border: 10px solid $secondary;
   transition: border 0.4s cubic-bezier(0.42, 0, 0, 1);
 }
+
+@media screen and (max-width: 768px) {
+  #myProjects {
+    display: none;
+  }
+}

@@ -134,7 +134,7 @@ $test-border: none;
   position: absolute;
   top: 25vh;
   left: 10vw;
-  z-index: 3000;
+  z-index: 3;
   color: white;
   p {
     margin-bottom: 3vw;
@@ -180,6 +180,9 @@ $test-border: none;
 }
 
 @media screen and (max-width: 768px) {
+  .skills {
+    display: none;
+  }
   .about {
     h1 {
       display: none;

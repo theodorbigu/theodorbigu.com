@@ -53,3 +53,10 @@
   content: "";
   z-index: 10;
 }
+
+
+@media (max-width: 768px) {
+  #left-links {
+    display: none;
+  }
+}
