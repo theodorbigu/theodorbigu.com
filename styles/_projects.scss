@@ -183,8 +183,13 @@ $test-border: none;
 
 @media screen and (max-width: 768px) {
   #myProjects {
-    div{
-      max-width: 70vw;
+    div {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 0;
+      height: 30vh;
     }
   }
 }
@@ -201,7 +206,7 @@ $test-border: none;
       "image3"
       "p3";
     div {
-      max-width: 70vw;
+      //max-width: 70vw;
       margin-top: 0;
       margin-bottom: 1rem;
     }
