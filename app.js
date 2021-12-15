@@ -179,8 +179,6 @@ let myProjects = gsap.timeline({
 myProjects.to("#myProjectsTitle", { opacity: 1, right: 0, duration: 0.65 });
 ///
 
-
-
 //image1 (birthday)
 let birthdayTL = gsap.timeline({
   scrollTrigger: {
@@ -308,4 +306,18 @@ window.addEventListener("scroll", () => {
   }
 
   lastScrollY = window.scrollY;
+});
+
+///mobile modal
+
+const modal_container = document.getElementById("modal-container");
+var w = document.documentElement.clientWidth;
+const close_modal_btn = document.getElementById("close");
+
+if (w < 800) {
+  modal_container.classList.add("show");
+}
+
+close_modal_btn.addEventListener("click", () => {
+  modal_container.classList.remove("show");
 });

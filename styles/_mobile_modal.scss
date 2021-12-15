@@ -1,0 +1,51 @@
+.modal-container {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  pointer-events: none;
+  color: $text-color;
+  font-size: 1.5rem;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: $background;
+  width: 90vw;
+  max-width: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#close {
+  border: 3px solid $secondary;
+  background: transparent;
+  color: $secondary;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  &:hover {
+    background: $secondary;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
