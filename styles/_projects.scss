@@ -221,6 +221,20 @@ $test-border: none;
       margin-bottom: 10vh;
     }
   }
+  #image2 {
+    right: 0px;
+  }
+  #image1 {
+    left: 0px;
+  }
+  #image3 {
+    left: 0px;
+  }
+  .projects {
+    h2 {
+      right: 0px;
+    }
+  }
 }
 
 @media screen and (max-width: 1120px) {
