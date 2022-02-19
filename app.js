@@ -294,6 +294,44 @@ image3P.to("#image3P", { opacity: 1, duration: 0.6, ease: "power2.out" });
 
 ///
 
+////image4
+let image4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#image4",
+    start: "top 55%",
+  },
+});
+
+image4.to("#image4", {
+  opacity: 1,
+  left: 0,
+  duration: 0.5,
+});
+
+let image4Layer = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#image4Layer",
+    start: "top 55%",
+    //markers: true
+  },
+});
+image4Layer.to("#image4Layer", { left: 0, duration: 0.3 });
+image4Layer.to("#image4Layer", {
+  scaleX: 0,
+  transformOrigin: "0% bottom",
+  duration: 0.65,
+});
+
+let image4P = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#image4P",
+    start: "top 55%",
+    //markers: true
+  },
+});
+
+image4P.to("#image4P", { opacity: 1, duration: 0.6, ease: "power2.out" });
+
 //hide navbar on scroll down
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector("nav");
